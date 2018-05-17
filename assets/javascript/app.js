@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 var disneyQuestion = [{
     question: "Which country has won the most FIFA World Cups?",
     choices: ["Brazil", "Italy", "Spain", "Argentina" ],
@@ -97,8 +99,8 @@ function endOfgame(){
 
 // Initial condition when click Start Game
 $("#start-button").on("click",function(){
-    $(".start-zone").empty();
     run();
+    $(".start-zone").empty();
     trivia();
 })
 
@@ -210,7 +212,7 @@ $("#startOver").on("click",function(){
     trivia();
 })
 
-
+})
 
 
 
